@@ -1,24 +1,4 @@
-html {overflow-y:scroll;}
-body{background:#fff;color:rgb(255, 255, 255);font: 90%/1.462em "PT Sans", Arial, Helvetica, sans-serif;}
-hr{border:0 #efefef solid;border-top-width:1px;clear:both;height:0}
-h1,h2,h3,h4,h5,h6{font-weight:normal;}
-h1{font-size:200%}
-h2{font-size:180%}
-h3{font-size:146%}
-h4{font-size:120%}
-h5{font-size:120%}
-h6{font-size:120%}
-ol{list-style:decimal}
-ul{list-style:square}
-li{margin-left:30px}
-p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset,figure{margin-bottom:20px}
-li p {margin-bottom: 10px;}
-blockquote {padding:10px 5px 5px 20px;margin:0 0 20px 20px;background:#32383B;border-left:2px solid #3B4245;font-weight:normal;}
-pre,code{color:#DBDBDB;font:14px/1.5 'DejaVu Sans Mono',Monaco,Consolas,monospace;white-space:pre;}
-code {background:#32383B;padding:2px 4px 2px 4px;}
-pre {border:1px dashed #bfbfbf;background:#32383B;padding:6px 10px 13px 10px;overflow:auto;white-space:nowrap;margin:6px 0 20px 0;}
-.hidden {display:none;}
-.darklight {color:#bfbfbf;background:#191C1E;padding:6px;line-height: 1.8em;}
+
 a, a:visited, a:hover {
     color:#1d1b1b;
     text-decoration:underline;
@@ -28,19 +8,22 @@ a:hover {
     text-decoration:underline;
 }
 #container {
-    position:relative;
     width:96%;
-    margin:auto;
+    margin-top:0px;
+}
+header {
+      
+    height:50px;
 }
 #masthead {
     width:100%;
-    margin:auto;
-    margin-bottom: 14px;
-    overflow: hidden;
+    margin-left:-10px;
+    margin-top:-10px;
+/*    overflow: hidden;*/
     background: #1a1d1f;
     box-shadow: 10px 10px 40px #151617;
     opacity : 0.8;
-    position:absolute;
+    position:fixed;
     
 }
 
