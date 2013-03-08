@@ -8,18 +8,17 @@ a:hover {
     text-decoration:underline;
 }
 #container {
-    width:96%;
+    margin-left:0px;
     margin-top:0px;
 }
 header {
-      
-    height:50px;
+      height:40px;
 }
 #masthead {
-    width:100%;
-    margin-left:-10px;
-    margin-top:-10px;
-/*    overflow: hidden;*/
+    width:99%;
+    margin-left:0px;
+    margin-top:-5px;
+    overflow: hidden;
     background: #1a1d1f;
     box-shadow: 10px 10px 40px #151617;
     opacity : 0.8;
@@ -60,13 +59,15 @@ header {
 #sitemenu a.std {
     display:none;
 }
+/*
 #content a.url {color:#bfbfbf;font-size:80%;margin-left:10px;border:0;}
 #content a.url:hover {color:#fff;}
 #content {
-  
+    margin:0px 40%;
     font-size: 110%;
     color:#aaa;
 }
+*/
     #sitemenu a:link, #sitemenu a:visited {
         border:0;
         color: #bfbfbf;
@@ -104,7 +105,7 @@ header {
     background-size:cover
 }
 #about{
-    padding : 30px 15em;
+    padding : 80px 8em;
 }
 fieldset{
     border:none;
@@ -122,8 +123,12 @@ fieldset{
     height:auto;
     text-shadow: #000 1px 1px 1px;
 }
+/*
 #submitButton:hover{
+    color:#ddd;
 }
+*/
+/*
 #s{
     background:#c12a2a;
     color:#151617;
@@ -133,18 +138,27 @@ fieldset{
     width:640px;
     
 }
+*/
 .loginform{
     padding-left:80%;
-    background-color:#1a1d1f;
+/*    margin-bottom:20px;*/
+    height:800px;
+    width:0px;
+    background: url("puzzlekey.jpg") center no-repeat;
+    background-size:auto;
     
 }
+/*
 .loginform ul {
 	padding: 0;
 	margin: 0;
     background-color:#1a1d1f;
 }
+*/
 .loginform li {
-	display: inline;
+    margin: 0px -30px;
+	display:table-column;
+    padding: 0px -20px 0px;
 	float: left;
 }
 label {
@@ -152,6 +166,14 @@ label {
 	color: #999;
 }
 
+.loginform input:not([type=reset]) {
+	padding: 5px;
+	margin-right: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 
+				0px 1px 0px 0px rgba(250, 250, 250, 0.5) ;
+}
 .loginform input:not([type=submit]) {
 	padding: 5px;
 	margin-right: 10px;
@@ -162,18 +184,28 @@ label {
 }
 .loginform input[type=submit] {
 	border: 1px solid rgba(0, 0, 0, 0.3);
-	background: #64c8ef; /* Old browsers */
-	background: linear-gradient(to bottom,  #64c8ef 0%,#00a2e2 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2',GradientType=0 ); /* IE6-9 */
+	background: #64c8ef;
+	background: linear-gradient(to bottom,  #64c8ef 0%,#00a2e2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2',GradientType=0 );
 	color: #fff;
 	padding: 5px 15px;
-	margin-right: 0;
+	margin-right: 200px;
 	margin-top: 15px;
 	border-radius: 3px;
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
-
-
+loginform input[type=reset] {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: #64c8ef;
+	background: linear-gradient(to bottom,  #64c8ef 0%,#00a2e2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2',GradientType=0 );
+	color: #fff;
+	padding: 5px 15px;
+	margin-right: 100px;
+	margin-top: 15px;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
 .oLogin {
     background:#dfdfdf;
     color:black;

@@ -6,35 +6,38 @@
     <link rel="stylesheet" type="text/css" media="all" href="style.css" />
 </head>
 <body>
-<div id="container">
-    <div id="masthead">
+    <header>
+        <div id="masthead">
+        
         <a href="index.html"><h1 id="logo"></h1></a>
         <ul id="sitemenu">
             <li><a class="siteabout std" href="about.html" title="About Online Learning" target="_blank">About</a></li>
+            <li></li>
             <li><a class="std" href="login.html" title="Login to Online Learing">Login</a></li>
         </ul>
+    </div>
+    </header>
+<div id="container">
     
-        </div>
-        <div id="content">
-            
-                <section class="loginform cf">
-<form name="login" action="index_submit" method="get" accept-charset="utf-8">
+    <div id="content">
+        <section class="loginform">
+<form name="login" action="index_submit" method= "post" accept-charset="utf-8">
 	<ul>
 		<li><label for="usermail">Email</label>
-		<input type="email" name="usermail" placeholder="Email" required></li>
+		<input type="email" name="usermailid" placeholder="Email" required></li>
 		<li><label for="password">Password</label>
 		<input type="password" name="password" placeholder="Password" required></li>
+        
 		<li>
-		<input type= submit value="Login"></li>
+		<input type= submit value="Login" onclick="JavaScript:alert('Page Under Construction!!!')" />
+        </li>
         <li>
-		<input type= reset value="Reset"></li>
+		<input type= reset value="Reset">
+        </li>
 	</ul>
 </form>
 </section>
-
     </div>
-
-    </div>
-    
+</div>
 </body>
 </html>

@@ -2,43 +2,43 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Log On | Online learning</title>
+    <title>SignUp | Online learning</title>
     <link rel="stylesheet" type="text/css" media="all" href="style.css" />
 </head>
 <body>
-<div id="container">
-    <div id="masthead">
+    <header>
+        <div id="masthead">
+        
         <a href="index.html"><h1 id="logo"></h1></a>
         <ul id="sitemenu">
-            <li><a class="siteabout std" href="about.html" title="About Online Learning">About</a></li>
-            
+            <li><a class="siteabout std" href="about.html" title="About Online Learning" target="_blank">About</a></li>
+            <li></li>
             <li><a class="std" href="login.html" title="Login to Online Learing">Login</a></li>
         </ul>
     </div>
+    </header>
+<div id="container">
     
     <div id="content">
-            <form method="post">
-                <table id="logField">
-                    <tr>
-                    	<td colspan=2><span class="lLabel">Username</span></td><td><input type="text" class="oLogin"></td>
-                    </tr>
-                    
-                    <tr>
-                    	<td colspan=2><span class="lLabel">Password</span></td><td><input type="password" class="oLogin"></td>
-                    </tr>
-                    
-                    <tr>
-                    	<td colspan=2><span class="lLabel">Confirm Password</span></td><td><input type="text" class="oLogin"></td>
-                    </tr>
-                    <tr></tr>
-					<tr>
-                        <td><button type="reset" autofocus>Reset</button></td>
-                        <td></td>
-                        <td><button id="sub" type="button" autofocus>Submit</button></td>
-                    </tr>
-                </table>
-            </form>
+        <section class="loginform">
+<form name="login" action="index_submit" method= "post" accept-charset="utf-8">
+	<ul>
+		<li><label for="username">Username</label>
+		<input type="email" name="username" placeholder="Username" required></li>
+		<li><label for="password">Password</label>
+		<input type="password" name="password" placeholder="Password" required></li>
+        <li><label for="password">Confirm Password</label>
+        <li><input type="password" name="confpassword" placeholder="Confirm Password" required></li>
+		<li>
+		<input type= submit value="Logon" onclick="JavaScript:alert('Page Under Construction!!!')" />
+        </li>
+        <li>
+		<input type= reset value="Reset">
+        </li>
+	</ul>
+</form>
+</section>
     </div>
-    </div>
+</div>
 </body>
 </html>
